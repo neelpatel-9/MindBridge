@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBridge | Always On, Anonymous Student Mental Health Support</title>
+    <meta name="description" content="AI-powered mental health companion built for Indian college students. Affordable, anonymous, and available 24/7 in 8 regional languages. CBT-backed.">
+    
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet Link -->
+    <link rel="stylesheet" href="styles.css?v=13">
+</head>
+<body>
+    <!-- Background Canvas Particles -->
+    <canvas id="synapse-bg"></canvas>
+
+    <!-- Glowing Orbs (CSS animated background blobs) -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Floating Global Navigation -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                    <path d="M19 10v1a7 7 0 0 1-14 0v-1"></path>
+                    <line x1="12" x2="12" y1="19" y2="22"></line>
+                </svg>
+            </span>
+            <span class="logo-text">Mind<span>Bridge</span></span>
+        </div>
+        <nav class="desktop-nav">
+            <a href="#hero" class="nav-link active">Home</a>
+            <a href="#problem" class="nav-link">The Crisis</a>
+            <a href="#solution" class="nav-link">Our Solution</a>
+            <a href="#market" class="nav-link">Market & Audience</a>
+            <a href="#differentiators" class="nav-link">Why MindBridge</a>
+            <a href="#science" class="nav-link">The Science</a>
+            <a href="#cta" class="nav-link">Get Started</a>
+            <a href="#sources" class="nav-link">Sources</a>
+        </nav>
+    </header>
+
+    <!-- Side Slide Dots Navigation -->
+    <aside class="slide-dots">
+        <a href="#hero" class="dot active" data-slide="0"><span class="dot-label">Home</span></a>
+        <a href="#problem" class="dot" data-slide="1"><span class="dot-label">The Crisis</span></a>
+        <a href="#solution" class="dot" data-slide="2"><span class="dot-label">Solution</span></a>
+        <a href="#market" class="dot" data-slide="3"><span class="dot-label">Market</span></a>
+        <a href="#differentiators" class="dot" data-slide="4"><span class="dot-label">Differentiators</span></a>
+        <a href="#science" class="dot" data-slide="5"><span class="dot-label">Science</span></a>
+        <a href="#cta" class="dot" data-slide="6"><span class="dot-label">Get Started</span></a>
+        <a href="#sources" class="dot" data-slide="7"><span class="dot-label">References</span></a>
+    </aside>
+
+    <!-- Slide Containers -->
+    <main class="slide-container">
+        
+        <!-- PAGE 1: HERO / LANDING -->
+        <section id="hero" class="slide slide-hero">
+            <div class="slide-content-wrapper">
+                <div class="hero-grid">
+                    <div class="hero-text-content">
+                        <div class="tagline-badge">
+                            <span class="pulse-dot"></span> College Mental Health Support
+                        </div>
+                        <h1 class="hero-title animate-text">Your Mind Deserves Support. <br><span class="gradient-text">Right Now.</span> In Your Language.</h1>
+                        <p class="hero-subtitle animate-text-delay">MindBridge is an AI-powered mental health companion built for Indian college students — affordable, anonymous, and available 24/7.</p>
+                        
+                        <div class="hero-actions">
+                            <a href="#cta" class="btn btn-primary animate-btn">Get Started Free</a>
+                            <a href="#solution" class="btn btn-outline animate-btn">See How It Works</a>
+                        </div>
+
+                        <!-- Trust Badge Strip -->
+                        <div class="trust-badge-strip">
+                            <div class="trust-badge">
+                                <span class="badge-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                </span>
+                                <span class="badge-text">Anonymous Check-in</span>
+                            </div>
+                            <div class="trust-badge">
+                                <span class="badge-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                                </span>
+                                <span class="badge-text">8 Indian Languages</span>
+                            </div>
+                            <div class="trust-badge">
+                                <span class="badge-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                                </span>
+                                <span class="badge-text">CBT-Backed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual Content (Phone Mockup Frame) -->
+                    <div class="hero-visual">
+                        <div class="floating-phone-container">
+                            <div class="phone-glow-glow"></div>
+                            <div class="phone-mockup">
+                                <div class="phone-speaker"></div>
+                                <div class="phone-screen">
+                                    <div class="phone-header">
+                                        <div class="status-bar">
+                                            <span id="phone-time">9:41</span>
+                                            <div class="status-icons">
+                                                <svg class="svg-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 3px; vertical-align: middle;"><path d="M12 20h.01M8 20h.01M16 20h.01M4 20h.01M20 20h.01"></path></svg>
+                                                <svg class="svg-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><rect x="2" y="7" width="16" height="10" rx="2" ry="2"></rect><rect x="5" y="10" width="10" height="4" fill="currentColor" stroke="none"></rect><line x1="22" y1="11" x2="22" y2="13"></line></svg>
+                                            </div>
+                                        </div>
+                                        <div class="phone-app-bar">
+                                            <div class="app-avatar">MB</div>
+                                            <div class="app-info">
+                                                <h4>MindBridge AI</h4>
+                                                <p>● Active Support Companion</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="phone-messages scrollbar-hidden">
+                                        <div class="msg-bubble system">
+                                            Namaste! I'm your MindBridge companion. I support students with exam anxiety, relationship stress, or simply feeling overwhelmed. How are you feeling today?
+                                        </div>
+                                        <div class="msg-bubble user">
+                                            Placements are starting tomorrow. I feel so anxious I can't sleep.
+                                        </div>
+                                        <div class="msg-bubble system typing">
+                                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                                        </div>
+                                    </div>
+                                    <div class="phone-input-bar">
+                                        <input type="text" class="hero-chat-input" id="hero-chat-input" placeholder="Let's reframe that anxiety...">
+                                        <button class="send-btn" id="hero-chat-send" aria-label="Send message">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Floating tags decoration -->
+                            <div class="floating-tag tag-1">Hindi • हिंदी</div>
+                            <div class="floating-tag tag-2">Telugu • తెలుగు</div>
+                            <div class="floating-tag tag-3">Tamil • தமிழ்</div>
+                            <div class="floating-tag tag-4">CBT Exercises</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>The Crisis No One's Talking About</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- PAGE 2: PROBLEM / OPPORTUNITY -->
+        <section id="problem" class="slide slide-problem">
+            <div class="slide-content-wrapper">
+                <div class="section-header-block">
+                    <span class="section-label">The Reality</span>
+                    <h2 class="section-title">The Crisis No One's Talking About Enough</h2>
+                    <p class="section-lead">Indian college campuses are facing a quiet epidemic. Cost, shortage of professionals, and deep-seated stigma block students from getting the help they need.</p>
+                </div>
+
+                <div class="problem-grid">
+                    <!-- Left: Interactive Stats Blocks -->
+                    <div class="problem-stats-panel">
+                        <h3 class="panel-heading">Behind the Numbers</h3>
+                        
+                        <div class="interactive-stat-card active" data-stat-index="0">
+                            <div class="stat-progress-container">
+                                <svg class="progress-ring" width="80" height="80">
+                                    <circle class="progress-ring-bg" cx="40" cy="40" r="34" />
+                                    <circle class="progress-ring-fill" cx="40" cy="40" r="34" stroke-dasharray="213.6" stroke-dashoffset="142.4" /> <!-- 1 in 3 (33%) -->
+                                </svg>
+                                <span class="stat-value-overlay">33%</span>
+                            </div>
+                            <div class="stat-info">
+                                <h4>1 in 3 Students Depressed</h4>
+                                <p>Moderate-to-severe symptoms across 9 Indian states.</p>
+                                <span class="stat-source">Source: Sage Journals (Cherian et al., 2025)</span>
+                            </div>
+                        </div>
+
+                        <div class="interactive-stat-card" data-stat-index="1">
+                            <div class="stat-progress-container">
+                                <svg class="progress-ring" width="80" height="80">
+                                    <circle class="progress-ring-bg" cx="40" cy="40" r="34" />
+                                    <circle class="progress-ring-fill" cx="40" cy="40" r="34" stroke-dasharray="213.6" stroke-dashoffset="64.3" /> <!-- 69.9% -->
+                                </svg>
+                                <span class="stat-value-overlay">70%</span>
+                            </div>
+                            <div class="stat-info">
+                                <h4>69.9% High Student Anxiety</h4>
+                                <p>Showed moderate-to-high anxiety levels in 8 major Indian cities.</p>
+                                <span class="stat-source">Source: ScienceDirect (SRM Study, 2025)</span>
+                            </div>
+                        </div>
+
+                        <div class="interactive-stat-card" data-stat-index="2">
+                            <div class="stat-progress-container">
+                                <svg class="progress-ring" width="80" height="80">
+                                    <circle class="progress-ring-bg" cx="40" cy="40" r="34" />
+                                    <circle class="progress-ring-fill" cx="40" cy="40" r="34" stroke-dasharray="213.6" stroke-dashoffset="31.6" /> <!-- 85.2% -->
+                                </svg>
+                                <span class="stat-value-overlay">85%</span>
+                            </div>
+                            <div class="stat-info">
+                                <h4>85.2% Treatment Gap</h4>
+                                <p>Depression cases in India that go completely untreated.</p>
+                                <span class="stat-source">Source: PubMed Central (Systematic Review)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Barriers & Opportunity -->
+                    <div class="problem-barriers-panel">
+                        <h3 class="panel-heading">The Four Barriers</h3>
+                        <div class="barriers-grid">
+                            <div class="barrier-card">
+                                <div class="barrier-header">
+                                    <span class="barrier-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                                    </span>
+                                    <h4>Cost Barrier</h4>
+                                </div>
+                                <p>In-person sessions cost <strong>₹800–₹5,000</strong>. Almost never covered by insurance.</p>
+                                <span class="barrier-source">NorthEast Now</span>
+                            </div>
+
+                            <div class="barrier-card">
+                                <div class="barrier-header">
+                                    <span class="barrier-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                                    </span>
+                                    <h4>Severe Shortage</h4>
+                                </div>
+                                <p>India has only <strong>0.75 psychiatrists</strong> per lakh (WHO recommends 3.0 per lakh).</p>
+                                <span class="barrier-source">Business Standard</span>
+                            </div>
+
+                            <div class="barrier-card">
+                                <div class="barrier-header">
+                                    <span class="barrier-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><line x1="9" y1="10" x2="15" y2="10"></line></svg>
+                                    </span>
+                                    <h4>Stigma & Taboo</h4>
+                                </div>
+                                <p>Counselling is heavily stigmatized in Indian family nodes and competitive campuses.</p>
+                                <span class="barrier-source">On-campus Survey</span>
+                            </div>
+
+                            <div class="barrier-card">
+                                <div class="barrier-header">
+                                    <span class="barrier-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-10a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                    </span>
+                                    <h4>Urban Divide</h4>
+                                </div>
+                                <p><strong>70% of psychiatrists</strong> practice in metro hubs, isolating Tier-2/3 & rural colleges.</p>
+                                <span class="barrier-source">Psychology Town</span>
+                            </div>
+                        </div>
+
+                        <!-- Opportunity Callout -->
+                        <div class="opportunity-card glass-panel">
+                            <div class="opp-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                            </div>
+                            <div class="opp-text">
+                                <h4>The Opportunity</h4>
+                                <p><strong>40 Million+</strong> Indian college students. A broken support network. A generation asking for support in silence. MindBridge bridges this gap instantly, anonymously, and cost-effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 3: SOLUTION / VALUE PROPOSITION (MAIN INTERACTIVE CENTER) -->
+        <section id="solution" class="slide slide-solution">
+            <div class="slide-content-wrapper">
+                <div class="section-header-block">
+                    <span class="section-label">Meet MindBridge</span>
+                    <h2 class="section-title">Always On, Always Affordable</h2>
+                    <p class="section-lead">Not a replacement for therapy — a bridge to it. We give students a safe space to start, build mental resilience, and request clinical support when necessary.</p>
+                </div>
+
+                <div class="solution-grid">
+                    <!-- Left: Feature selector panels (activates phone widgets) -->
+                    <div class="features-selector-panel">
+                        <div class="feature-selector-card active" data-feature="cbt-chat">
+                            <div class="feat-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <div class="feat-text">
+                                <h4>AI Chat Companion</h4>
+                                <p>Conversations utilizing Cognitive Behavioral Therapy techniques adapted to local context.</p>
+                            </div>
+                            <span class="active-indicator"></span>
+                        </div>
+
+                        <div class="feature-selector-card" data-feature="mood-track">
+                            <div class="feat-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                            </div>
+                            <div class="feat-text">
+                                <h4>Mood Tracker & Analysis</h4>
+                                <p>Identify behavioral triggers and check in daily with visual reports.</p>
+                            </div>
+                            <span class="active-indicator"></span>
+                        </div>
+
+                        <div class="feature-selector-card" data-feature="cbt-exercises">
+                            <div class="feat-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                            </div>
+                            <div class="feat-text">
+                                <h4>Breathing & CBT Library</h4>
+                                <p>Calm deep breathing guides, behavioral activation, and cognitive restructuring.</p>
+                            </div>
+                            <span class="active-indicator"></span>
+                        </div>
+
+                        <div class="feature-selector-card" data-feature="peer-support">
+                            <div class="feat-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </div>
+                            <div class="feat-text">
+                                <h4>Anonymous Peer Support</h4>
+                                <p>Share stories, listen to cohorts, and build solidarity with absolute anonymity.</p>
+                            </div>
+                            <span class="active-indicator"></span>
+                        </div>
+
+                        <div class="feature-selector-card" data-feature="languages">
+                            <div class="feat-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M4 21v-4a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H7l-3 4z"></path><path d="M12 8l-2 2 2 2m4-4l2 2-2 2"></path></svg>
+                            </div>
+                            <div class="feat-text">
+                                <h4>8 Regional Languages</h4>
+                                <p>Think and feel in your mother tongue: Hindi, Telugu, Tamil, Marathi, Bengali, Kannada, Malayalam, Gujarati.</p>
+                            </div>
+                            <span class="active-indicator"></span>
+                        </div>
+
+                        <div class="feature-selector-card" data-feature="crisis">
+                            <div class="feat-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                            </div>
+                            <div class="feat-text">
+                                <h4>Crisis Escalation</h4>
+                                <p>Automatic semantic detection of high-risk phrases, routing directly to active Indian helplines.</p>
+                            </div>
+                            <span class="active-indicator"></span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Live Smartphone Interactive Simulator -->
+                    <div class="simulator-wrapper">
+                        <div class="simulator-phone">
+                            <div class="phone-notch"></div>
+                            
+                            <!-- SCREEN 1: CBT CHAT INTERACTIVE -->
+                            <div class="sim-screen active" id="sim-cbt-chat">
+                                <div class="sim-header">
+                                    <div class="sim-header-title">
+                                        <span class="avatar-dot"></span>
+                                        <div>
+                                            <h5>MindBridge AI</h5>
+                                            <p>CBT Assistant</p>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <div class="sim-language-selector">
+                                            <select id="chat-lang">
+                                                <option value="en">English</option>
+                                                <option value="hi">हिंदी (Hindi)</option>
+                                                <option value="te">తెలుగు (Telugu)</option>
+                                                <option value="ta">தமிழ் (Tamil)</option>
+                                                <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="sim-chat-body scrollbar-hidden" id="chat-conversation">
+                                    <!-- Populated by JS -->
+                                </div>
+
+                                <div class="sim-chat-controls">
+                                    <div class="prompt-chips">
+                                        <button class="prompt-chip" data-scenario="exam">Exam Stress</button>
+                                        <button class="prompt-chip" data-scenario="homesick">Homesick in PG</button>
+                                        <button class="prompt-chip" data-scenario="placements">Placement Anxiety</button>
+                                        <button class="prompt-chip" data-scenario="social">Friend Conflict</button>
+                                    </div>
+                                    <div class="sim-input-bar">
+                                        <input type="text" id="sim-chat-input" placeholder="Type a message or ask AI...">
+                                        <button class="sim-send-btn" id="sim-chat-send" aria-label="Send message">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SCREEN 2: MOOD TRACKER INTERACTIVE -->
+                            <div class="sim-screen" id="sim-mood-track">
+                                <div class="sim-header">
+                                    <h5>Daily Check-In</h5>
+                                    <p>How does your mind feel today?</p>
+                                </div>
+                                <div class="sim-mood-body">
+                                    <div class="mood-emojis-row">
+                                        <button class="mood-btn" data-mood="5" data-color="#4a7c59">
+                                            <span class="mood-icon-wrapper">
+                                                <svg class="mood-svg-face" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><path d="M9 9c.5.5 1.5.5 2 0M13 9c.5.5 1.5.5 2 0"></path></svg>
+                                            </span>
+                                            <span>Calm</span>
+                                        </button>
+                                        <button class="mood-btn" data-mood="4" data-color="#789d8a">
+                                            <span class="mood-icon-wrapper">
+                                                <svg class="mood-svg-face" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                                            </span>
+                                            <span>Good</span>
+                                        </button>
+                                        <button class="mood-btn" data-mood="3" data-color="#b2cbb9">
+                                            <span class="mood-icon-wrapper">
+                                                <svg class="mood-svg-face" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="15" x2="16" y2="15"></line><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                                            </span>
+                                            <span>Okay</span>
+                                        </button>
+                                        <button class="mood-btn" data-mood="2" data-color="#e8d098">
+                                            <span class="mood-icon-wrapper">
+                                                <svg class="mood-svg-face" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 15c1 1 2-1 3 0s2-1 3 0s1-1 2 0"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                                            </span>
+                                            <span>Anxious</span>
+                                        </button>
+                                        <button class="mood-btn" data-mood="1" data-color="#dca396">
+                                            <span class="mood-icon-wrapper">
+                                                <svg class="mood-svg-face" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M16 16s-1.5-2.5-4-2.5-4 2.5-4 2.5"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                                            </span>
+                                            <span>Stressed</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="mood-graph-panel">
+                                        <h6>Weekly Mind Journey</h6>
+                                        <div class="svg-graph-container">
+                                            <!-- SVG line chart dynamically drawn -->
+                                            <svg width="100%" height="135" id="mood-svg-chart">
+                                                <g class="grid-lines">
+                                                    <line x1="0" y1="20" x2="100%" y2="20" stroke="rgba(255,255,255,0.05)" />
+                                                    <line x1="0" y1="50" x2="100%" y2="50" stroke="rgba(255,255,255,0.05)" />
+                                                    <line x1="0" y1="80" x2="100%" y2="80" stroke="rgba(255,255,255,0.05)" />
+                                                    <line x1="0" y1="110" x2="100%" y2="110" stroke="rgba(255,255,255,0.05)" />
+                                                </g>
+                                                <path id="mood-chart-line" d="" fill="none" stroke="url(#mood-gradient)" stroke-width="3" stroke-linecap="round" />
+                                                <g id="mood-chart-points"></g>
+                                                
+                                                <defs>
+                                                    <linearGradient id="mood-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                        <stop offset="0%" stop-color="var(--primary-teal)" />
+                                                        <stop offset="100%" stop-color="var(--primary-blue)" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SCREEN 3: CBT EXERCISES / BREATHING -->
+                            <div class="sim-screen" id="sim-cbt-exercises">
+                                <div class="sim-header">
+                                    <h5>CBT Exercises</h5>
+                                    <p>Calm down physiological arousal</p>
+                                </div>
+                                <div class="sim-breathing-body">
+                                    <h6>Box Breathing (4-4-4 Technique)</h6>
+                                    
+                                    <div class="breathing-bubble-container">
+                                        <div class="breathing-ring-outer"></div>
+                                        <div class="breathing-bubble" id="b-bubble">
+                                            <span id="breathing-action">Focus</span>
+                                            <span id="breathing-timer"></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="btn btn-secondary btn-sm" id="btn-breathing-start">Start Exercise</button>
+                                    <p class="breathing-guide-helper">Regulate your nervous system. Inhale as bubble grows, hold, and exhale as it shrinks.</p>
+                                </div>
+                            </div>
+
+                            <!-- SCREEN 4: ANONYMOUS PEER SUPPORT -->
+                            <div class="sim-screen" id="sim-peer-support">
+                                <div class="sim-header">
+                                    <h5>Peer Bridge</h5>
+                                    <p>Talk with students anonymously</p>
+                                </div>
+                                <div class="sim-peer-body scrollbar-hidden">
+                                    <div class="peer-post">
+                                        <div class="post-meta">Hostel_Life99 • IIT Madras</div>
+                                        <p class="post-content">Does anyone else feel like they don't belong here? Everyone seems to know what they're doing, and I'm struggling with basic classes.</p>
+                                        <div class="post-footer">
+                                            <span>42 support votes</span>
+                                            <span>12 supportive replies</span>
+                                        </div>
+                                    </div>
+                                    <div class="peer-post">
+                                        <div class="post-meta">HopefulMind • DU South Campus</div>
+                                        <p class="post-content">Passed my re-exam today! Big thanks to the breathing exercises on here. To anyone else waiting on backlogs, hang in there!</p>
+                                        <div class="post-footer">
+                                            <span>89 support votes</span>
+                                            <span>8 supportive replies</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="peer-footer">
+                                    <button class="btn btn-primary btn-sm btn-full">Post Anonymously</button>
+                                </div>
+                            </div>
+
+                            <!-- SCREEN 5: 8 REGIONAL LANGUAGES -->
+                            <div class="sim-screen" id="sim-languages">
+                                <div class="sim-header">
+                                    <h5>Select Language</h5>
+                                    <p>Workouts & chat in your mother tongue</p>
+                                </div>
+                                <div class="sim-lang-body">
+                                    <div class="lang-grid">
+                                        <div class="lang-card-item active">
+                                            <h6>English</h6>
+                                            <p>Active</p>
+                                        </div>
+                                        <div class="lang-card-item">
+                                            <h6>हिंदी</h6>
+                                            <p>Hindi</p>
+                                        </div>
+                                        <div class="lang-card-item">
+                                            <h6>తెలుగు</h6>
+                                            <p>Telugu</p>
+                                        </div>
+                                        <div class="lang-card-item">
+                                            <h6>தமிழ்</h6>
+                                            <p>Tamil</p>
+                                        </div>
+                                        <div class="lang-card-item">
+                                            <h6>ಕನ್ನಡ</h6>
+                                            <p>Kannada</p>
+                                        </div>
+                                        <div class="lang-card-item">
+                                            <h6>मराठी</h6>
+                                            <p>Marathi</p>
+                                        </div>
+                                        <div class="lang-card-item">
+                                            <h6>বাংলা</h6>
+                                            <p>Bengali</p>
+                                        </div>
+                                        <div class="lang-card-item">
+                                            <h6>മലയാളം</h6>
+                                            <p>Malayalam</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SCREEN 6: CRISIS ESCALATION -->
+                            <div class="sim-screen" id="sim-crisis">
+                                <div class="sim-header crisis-header">
+                                    <h5>
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; vertical-align: middle;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                                        Active Shield Enabled
+                                    </h5>
+                                    <p>High-risk language autodetected</p>
+                                </div>
+                                <div class="sim-crisis-body">
+                                    <p class="crisis-msg-warning">If you are feeling completely overwhelmed, please know you are not alone. MindBridge is always connected with India's largest verified emergency networks.</p>
+                                    
+                                    <div class="emergency-contact-card">
+                                        <h6>iCall Helpline (TISS)</h6>
+                                        <p class="phone-number">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; vertical-align: middle;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                            9152987821
+                                        </p>
+                                        <span class="badge-status">Free • Mon-Sat 10AM-8PM</span>
+                                    </div>
+
+                                    <div class="emergency-contact-card">
+                                        <h6>Tele-MANAS (Govt of India)</h6>
+                                        <p class="phone-number">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; vertical-align: middle;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                            14416
+                                        </p>
+                                        <span class="badge-status">Free • 24/7 • Toll-Free</span>
+                                    </div>
+                                    
+                                    <button class="btn btn-outline btn-sm btn-full" style="border-color: rgba(255,255,255,0.1)">Back to Chat</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 4: AUDIENCE & MARKET -->
+        <section id="market" class="slide slide-market">
+            <div class="slide-content-wrapper">
+                <div class="section-header-block">
+                    <span class="section-label">Market Dynamics</span>
+                    <h2 class="section-title">Built for 40 Million Students. Ready for a $452M Market.</h2>
+                    <p class="section-lead">The online mental health space in India is scaling rapidly, fueled by rising awareness, smartphone penetration, and active search for stigma-free support.</p>
+                </div>
+
+                <div class="market-grid">
+                    <!-- Left: Dynamic interactive chart -->
+                    <div class="market-chart-panel">
+                        <div class="chart-controls-row">
+                            <button class="chart-toggle active" id="btn-chart-market">Online Market ($M)</button>
+                            <button class="chart-toggle" id="btn-chart-apps">Mental Apps ($M)</button>
+                        </div>
+                        
+                        <div class="svg-market-chart-container">
+                            <svg id="market-svg-chart" width="100%" height="240" viewBox="0 0 500 240" preserveAspectRatio="none">
+                                <!-- Background grid -->
+                                <line x1="50" y1="20" x2="450" y2="20" stroke="rgba(255,255,255,0.05)" />
+                                <line x1="50" y1="75" x2="450" y2="75" stroke="rgba(255,255,255,0.05)" />
+                                <line x1="50" y1="130" x2="450" y2="130" stroke="rgba(255,255,255,0.05)" />
+                                <line x1="50" y1="185" x2="450" y2="185" stroke="rgba(255,255,255,0.05)" />
+                                
+                                <!-- Filled Area Path (to be animated via CSS/JS) -->
+                                <path id="market-area-path" d="" fill="url(#area-gradient)" opacity="0.3" />
+                                <!-- Stroke Line Path -->
+                                <path id="market-line-path" d="" fill="none" stroke="var(--primary-teal)" stroke-width="4" stroke-linecap="round" />
+                                
+                                <!-- Chart nodes -->
+                                <g id="market-nodes"></g>
+
+                                <!-- X-Axis SVG Labels (Responsive and internally aligned) -->
+                                <text x="50" y="215" text-anchor="middle" class="svg-axis-label">2024</text>
+                                <text x="150" y="215" text-anchor="middle" class="svg-axis-label">2026</text>
+                                <text x="250" y="215" text-anchor="middle" class="svg-axis-label">2028</text>
+                                <text x="350" y="215" text-anchor="middle" class="svg-axis-label">2030</text>
+                                <text x="450" y="215" text-anchor="middle" class="svg-axis-label">2033</text>
+
+                                <defs>
+                                    <linearGradient id="area-gradient" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="var(--primary-teal)" />
+                                        <stop offset="100%" stop-color="var(--primary-teal)" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="chart-caption" id="market-chart-desc">India online mental health market is projected to reach $451.73M by 2033, growing at a CAGR of 13.4%. <span class="citation">Source: IMARC</span></p>
+                    </div>
+
+                    <!-- Right: Target Cohorts -->
+                    <div class="market-info-panel">
+                        <h3 class="panel-heading">Target Segments</h3>
+                        <div class="cohort-tabs">
+                            <div class="cohort-tab active" data-cohort="first-year">First-Years</div>
+                            <div class="cohort-tab" data-cohort="hostellers">Hostellers</div>
+                            <div class="cohort-tab" data-cohort="high-stress">High-Stress Cohorts</div>
+                            <div class="cohort-tab" data-cohort="institutes">University B2B</div>
+                        </div>
+
+                        <div class="cohort-content-box glass-panel">
+                            <div class="cohort-pane active" id="pane-first-year">
+                                <h5>Transition Stress (Ages 18-21)</h5>
+                                <p>Students transitioning from schools to competitive university campuses. High risk of relocation anxiety, loneliness, self-identity crisis, and peer comparison.</p>
+                                <ul>
+                                    <li>Represents 35% of college registrations</li>
+                                    <li>Critical phase for early prevention frameworks</li>
+                                </ul>
+                            </div>
+                            <div class="cohort-pane" id="pane-hostellers">
+                                <h5>PG & Hostel Students</h5>
+                                <p>Living away from family support systems for the first time. Lack of direct parental oversight makes them highly dependent on digital and peer support channels.</p>
+                                <ul>
+                                    <li>High correlation with late-night anxiety spikes</li>
+                                    <li>Requires 24/7 support availability</li>
+                                </ul>
+                            </div>
+                            <div class="cohort-pane" id="pane-high-stress">
+                                <h5>Engineering & Medical Cohorts</h5>
+                                <p>Rigid curriculums, frequent exams, and placement pressures. Highly competitive grading loops create extreme stress cycles.</p>
+                                <ul>
+                                    <li>Academic failure triggers major crisis risks</li>
+                                    <li>Responds best to structured CBT exercises</li>
+                                </ul>
+                            </div>
+                            <div class="cohort-pane" id="pane-institutes">
+                                <h5>University Counselling Units</h5>
+                                <p>B2B licensing for university counseling centers. Acts as a triaging software that handles 80% of minor symptoms, letting human counselors focus on critical cases.</p>
+                                <ul>
+                                    <li>Increases counselor reach by 5x</li>
+                                    <li>Reduces institutional liability and cost</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 5: DIFFERENTIATORS -->
+        <section id="differentiators" class="slide slide-diff">
+            <div class="slide-content-wrapper">
+                <div class="section-header-block">
+                    <span class="section-label">Our Edge</span>
+                    <h2 class="section-title">Why MindBridge is Different</h2>
+                    <p class="section-lead">Most mental health tools are designed for Western contexts. MindBridge is built bottom-up for the specific structural, language, and cultural realities of Indian students.</p>
+                </div>
+
+                <div class="diff-grid">
+                    <!-- Left: Competitor Table -->
+                    <div class="table-container glass-panel">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Features</th>
+                                    <th class="highlight">MindBridge</th>
+                                    <th>Wysa</th>
+                                    <th>YourDOST</th>
+                                    <th>Headspace</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>India-Localized Stressors</td>
+                                    <td class="highlight-cell"><span class="table-status-icon check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polyline points="20 6 9 17 4 12"></polyline></svg> Yes</span></td>
+                                    <td><span class="table-status-icon warning"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> Partial</span></td>
+                                    <td><span class="table-status-icon check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polyline points="20 6 9 17 4 12"></polyline></svg> Yes</span></td>
+                                    <td><span class="table-status-icon cross"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> No</span></td>
+                                </tr>
+                                <tr>
+                                    <td>8 Indian Regional Languages</td>
+                                    <td class="highlight-cell"><span class="table-status-icon check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polyline points="20 6 9 17 4 12"></polyline></svg> Yes</span></td>
+                                    <td><span class="table-status-icon cross"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> No</span></td>
+                                    <td><span class="table-status-icon cross"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> No</span></td>
+                                    <td><span class="table-status-icon cross"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> No</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Student-Specific CBT</td>
+                                    <td class="highlight-cell"><span class="table-status-icon check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polyline points="20 6 9 17 4 12"></polyline></svg> Yes</span></td>
+                                    <td><span class="table-status-icon warning"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> Partial</span></td>
+                                    <td><span class="table-status-icon cross"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> No</span></td>
+                                    <td><span class="table-status-icon cross"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> No</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Anonymous Peer Support</td>
+                                    <td class="highlight-cell"><span class="table-status-icon check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polyline points="20 6 9 17 4 12"></polyline></svg> Yes</span></td>
+                                    <td><span class="table-status-icon cross"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> No</span></td>
+                                    <td><span class="table-status-icon warning"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> Partial</span></td>
+                                    <td><span class="table-status-icon cross"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> No</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Free / Low-Cost Core</td>
+                                    <td class="highlight-cell"><span class="table-status-icon check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polyline points="20 6 9 17 4 12"></polyline></svg> Yes</span></td>
+                                    <td><span class="table-status-icon check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polyline points="20 6 9 17 4 12"></polyline></svg> Yes</span></td>
+                                    <td><span class="table-status-icon warning"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> Partial</span></td>
+                                    <td><span class="table-status-icon cross"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> No</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Indian Helpline Escalate</td>
+                                    <td class="highlight-cell"><span class="table-status-icon check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polyline points="20 6 9 17 4 12"></polyline></svg> Yes</span></td>
+                                    <td><span class="table-status-icon warning"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> Partial</span></td>
+                                    <td><span class="table-status-icon check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polyline points="20 6 9 17 4 12"></polyline></svg> Yes</span></td>
+                                    <td><span class="table-status-icon cross"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> No</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Right: Callouts Card -->
+                    <div class="diff-cards">
+                        <div class="diff-card">
+                            <div class="diff-badge">01</div>
+                            <div class="diff-card-text">
+                                <h5>India-First Design</h5>
+                                <p>CBT exercises target stressors like academic placement anxiety, family pressure, and competitive exams, not general Western templates.</p>
+                            </div>
+                        </div>
+
+                        <div class="diff-card">
+                            <div class="diff-badge">02</div>
+                            <div class="diff-card-text">
+                                <h5>Language Equity</h5>
+                                <p>Providing clinically-adapted CBT exercises directly in 8 Indian regional languages so students can process thoughts in their mother tongue.</p>
+                            </div>
+                        </div>
+
+                        <div class="diff-card">
+                            <div class="diff-badge">03</div>
+                            <div class="diff-card-text">
+                                <h5>Peer + AI Hybrid</h5>
+                                <p>Blending AI-based clinical training with peer solidarity. Study shows peer elements reduce app dropout rates significantly.</p>
+                                <span class="citation-inline">Source: JMIR Mental Health</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 6: EVIDENCE & SCIENCE -->
+        <section id="science" class="slide slide-science">
+            <div class="slide-content-wrapper">
+                <div class="section-header-block">
+                    <span class="section-label">Validation</span>
+                    <h2 class="section-title">The Science Behind MindBridge</h2>
+                    <p class="section-lead">MindBridge is built on evidence-backed psychological protocols. Our CBT frameworks are clinically validated to reduce anxiety, stress, and depressive symptoms.</p>
+                </div>
+
+                <div class="science-grid">
+                    <!-- Left: Interactive CBT Cycle Widget -->
+                    <div class="cbt-cycle-panel glass-panel">
+                        <h4>Cognitive Behavioral Therapy (CBT) Framework</h4>
+                        <p class="cbt-desc-top">CBT focuses on how thoughts affect feelings and behaviors. Click on any node of the cycle to see how MindBridge rewrites a typical student stress loop:</p>
+                        
+                        <div class="cbt-interactive-diagram">
+                            <!-- Circular Nodes layout -->
+                            <div class="cbt-circle-wrapper">
+                                <div class="cbt-node node-situation active" data-node="situation">
+                                    <span>Situation</span>
+                                </div>
+                                <div class="cbt-node node-thought" data-node="thought">
+                                    <span>Thought</span>
+                                </div>
+                                <div class="cbt-node node-emotion" data-node="emotion">
+                                    <span>Emotion</span>
+                                </div>
+                                <div class="cbt-node node-behavior" data-node="behavior">
+                                    <span>Behavior</span>
+                                </div>
+                                <div class="cbt-center-logo">CBT</div>
+                                
+                                <svg class="cycle-svg-arrows" width="100%" height="100%">
+                                    <!-- Dynamic connecting lines can go here -->
+                                </svg>
+                            </div>
+
+                            <div class="cbt-info-card">
+                                <div class="cbt-pane active" id="cbt-pane-situation">
+                                    <h5>1. The Situation</h5>
+                                    <div class="cbt-example-box">
+                                        <div class="state-box before">
+                                            <strong>Trigger:</strong> Student receives a low score on a mock placement exam.
+                                        </div>
+                                    </div>
+                                    <div class="cbt-infographic">
+                                        <div class="info-flow-step">
+                                            <span class="step-icon">
+                                                <svg class="step-svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-bottom: 2px;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                                            </span>
+                                            <span class="step-label">Neutral Event</span>
+                                        </div>
+                                        <div class="info-flow-arrow">➔</div>
+                                        <div class="info-flow-step">
+                                            <span class="step-icon">
+                                                <svg class="step-svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-bottom: 2px;"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1 0-3.12 3 3 0 0 1 0-4.88 2.5 2.5 0 0 1 0-3.12A2.5 2.5 0 0 1 9.5 2Z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 0-3.12 3 3 0 0 0 0-4.88 2.5 2.5 0 0 0 0-3.12A2.5 2.5 0 0 0 14.5 2Z"></path></svg>
+                                            </span>
+                                            <span class="step-label">Mind's Filter</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cbt-pane" id="cbt-pane-thought">
+                                    <h5>2. The Thought</h5>
+                                    <div class="cbt-example-box">
+                                        <div class="state-box before">
+                                            <strong>Automatic Thought:</strong> "I failed this mock test. I'm stupid. I will never get placed, and my family will be disappointed."
+                                        </div>
+                                        <div class="state-box after">
+                                            <strong>MindBridge Reframe:</strong> "This was a mock exam designed to highlight my gaps. I have time to review my weak topics before the main drive."
+                                        </div>
+                                    </div>
+                                    <div class="restructure-checklist">
+                                        <div class="checklist-item">
+                                            <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="vertical-align: middle; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                            <span>Identify Distortions (Catastrophizing)</span>
+                                        </div>
+                                        <div class="checklist-item">
+                                            <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="vertical-align: middle; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                            <span>Examine Evidence (Mock vs Main test)</span>
+                                        </div>
+                                        <div class="checklist-item">
+                                            <svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="vertical-align: middle; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                            <span>Draft Rational Alternative Thought</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cbt-pane" id="cbt-pane-emotion">
+                                    <h5>3. The Emotion</h5>
+                                    <div class="cbt-example-box">
+                                        <div class="state-box before">
+                                            <strong>Unregulated:</strong> Severe anxiety, feelings of shame, chest tightness, hopelessness.
+                                        </div>
+                                        <div class="state-box after">
+                                            <strong>Regulated:</strong> Concern (but not panic), focus, slight stress (healthy arousal to study).
+                                        </div>
+                                    </div>
+                                    <div class="emotion-meter-container">
+                                        <div class="meter-row">
+                                            <span class="meter-label">Unregulated Anxiety</span>
+                                            <div class="meter-track">
+                                                <div class="meter-fill urgent" style="width: 85%"></div>
+                                            </div>
+                                            <span class="meter-value urgent">85%</span>
+                                        </div>
+                                        <div class="meter-row">
+                                            <span class="meter-label">Regulated Concern</span>
+                                            <div class="meter-track">
+                                                <div class="meter-fill safe" style="width: 35%"></div>
+                                            </div>
+                                            <span class="meter-value safe">35%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cbt-pane" id="cbt-pane-behavior">
+                                    <h5>4. The Behavior</h5>
+                                    <div class="cbt-example-box">
+                                        <div class="state-box before">
+                                            <strong>Maladaptive:</strong> Closes books, avoids friends, plays games all night, misses the next test.
+                                        </div>
+                                        <div class="state-box after">
+                                            <strong>Adaptive:</strong> Creates a study plan, revises mock answers, talks with a cohort peer.
+                                        </div>
+                                    </div>
+                                    <div class="behavior-pathways">
+                                        <div class="pathway-card negative">
+                                            <span class="path-title">Avoidance Loop</span>
+                                            <span class="path-desc">Withdrawal & Procrastination</span>
+                                        </div>
+                                        <div class="pathway-card positive">
+                                            <span class="path-title">Activation Path</span>
+                                            <span class="path-desc">Action Plan & Peer Support</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Peer Reviewed Citations List -->
+                    <div class="science-stats-panel">
+                        <div class="science-stat-card">
+                            <div class="sci-stat-header">
+                                <span class="sci-number">d = 0.7-0.9</span>
+                                <h5>Depression Improvement</h5>
+                            </div>
+                            <p>Blinded randomized control trials of student CBT apps showed medium-to-large improvements in depression. (Anxiety d = 0.80).</p>
+                            <span class="citation">Source: PubMed / NIH</span>
+                        </div>
+
+                        <div class="science-stat-card">
+                            <div class="sci-stat-header">
+                                <span class="sci-number">-30%</span>
+                                <h5>Anxiety Reduction</h5>
+                            </div>
+                            <p>Wysa (operating AI CBT chatbot models in India) achieved a 30% GAD-7 anxiety score reduction across its student user base.</p>
+                            <span class="citation">Source: Mordor Intelligence</span>
+                        </div>
+
+                        <div class="science-stat-card">
+                            <div class="sci-stat-header">
+                                <span class="sci-number">68%</span>
+                                <h5>Academic Impact</h5>
+                            </div>
+                            <p>68% of college students report that emotional difficulties impacted their academic performance. Wellness directly drives retention.</p>
+                            <span class="citation">Source: Inside Higher Ed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 7: CALL TO ACTION -->
+        <section id="cta" class="slide slide-cta">
+            <div class="slide-content-wrapper">
+                <div class="cta-layout-grid">
+                    
+                    <!-- Left: Form Card -->
+                    <div class="cta-form-panel glass-panel">
+                        <div class="form-header">
+                            <h3>Start Your Journey</h3>
+                            <p>Create a secure anonymous profile in 30 seconds. No phone number or email required.</p>
+                        </div>
+                        
+                        <form id="badge-generator-form" onsubmit="event.preventDefault();">
+                            <div class="form-group">
+                                <label for="form-nick">Pick a Mock Nickname</label>
+                                <input type="text" id="form-nick" placeholder="e.g. CalmPhoenix, HopefulWaves" required maxlength="15">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-lang">Preferred Language</label>
+                                    <select id="form-lang">
+                                        <option value="English">English</option>
+                                        <option value="Hindi">हिंदी (Hindi)</option>
+                                        <option value="Telugu">తెలుగు (Telugu)</option>
+                                        <option value="Tamil">தமிழ் (Tamil)</option>
+                                        <option value="Marathi">मराठी (Marathi)</option>
+                                        <option value="Kannada">ಕನ್ನಡ (Kannada)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-color">Profile Theme</label>
+                                    <select id="form-color">
+                                        <option value="teal">Healing Teal</option>
+                                        <option value="purple">Dreamy Lavender</option>
+                                        <option value="amber">Warm Amber</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full" id="btn-generate-badge">Generate Anonymous Pass</button>
+                        </form>
+
+                        <!-- Dynamically Generated ID Badge card -->
+                        <div class="dynamic-badge-wrapper" id="badge-result" style="display:none;">
+                            <div class="generated-badge">
+                                <div class="badge-card-header">
+                                    <div class="badge-chip"></div>
+                                    <div class="badge-title">MindBridge Access Pass</div>
+                                </div>
+                                <div class="badge-card-body">
+                                    <div class="badge-avatar-mock">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                    </div>
+                                    <div class="badge-details">
+                                        <h4 id="badge-disp-nick">CalmPhoenix</h4>
+                                        <p>Language: <span id="badge-disp-lang">Hindi</span></p>
+                                        <p class="badge-security">ID: SECURE_HASH_MEMBER</p>
+                                    </div>
+                                </div>
+                                <div class="badge-card-footer">
+                                    <span>
+                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                        End-to-End Anonymous
+                                    </span>
+                                    <span>
+                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                                        Powered by CBT
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="badge-helper-text">Your anonymous pass is ready! In a real app, this generates your secure key.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right: CTAs and Trust Footer info -->
+                    <div class="cta-info-panel">
+                        <div class="tagline-badge">Ready When You Are</div>
+                        <h2 class="cta-title">Your First Step Takes 30 Seconds</h2>
+                        <p class="cta-lead">"1 in 3 students is struggling right now. You're not alone — and you don't have to wait for a therapist's appointment to feel better. MindBridge is here, right now."</p>
+                        
+                        <div class="cta-options-list">
+                            <div class="cta-opt-card">
+                                <div class="opt-bullet">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary-teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div class="opt-text">
+                                    <h6>Start for Free</h6>
+                                    <p>Access our AI companion, mood dashboard, and breathing library immediately.</p>
+                                </div>
+                            </div>
+
+                            <div class="cta-opt-card">
+                                <div class="opt-bullet">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary-teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                </div>
+                                <div class="opt-text">
+                                    <h6>Try a Demo Conversation</h6>
+                                    <p>Select any prompt chip in the Solution slide to experience CBT reframing.</p>
+                                </div>
+                            </div>
+
+                            <div class="cta-opt-card">
+                                <div class="opt-bullet">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary-teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5zM6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                                </div>
+                                <div class="opt-text">
+                                    <h6>Partner With Us</h6>
+                                    <p>Integrate wellness support directly into your university portal. Contact our B2B team.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer Trust Indicators -->
+                        <div class="cta-trust-indicators">
+                            <span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                No personal data sold. Ever.
+                            </span>
+                            <span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                Built in India, for India
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 8: DATA SOURCES & REFERENCES (DEDICATED PAGE) -->
+        <section id="sources" class="slide slide-sources">
+            <div class="slide-content-wrapper">
+                <div class="section-header-block">
+                    <span class="section-label">Citations</span>
+                    <h2 class="section-title">Research & Data Sources</h2>
+                    <p class="section-lead">All claims, market sizes, and statistics are cited from peer-reviewed journals, governmental publications, and market research studies.</p>
+                </div>
+
+                <div class="sources-panel-container glass-panel">
+                    <!-- Filters Row -->
+                    <div class="sources-filter-row">
+                        <button class="filter-btn active" data-filter="all">All References</button>
+                        <button class="filter-btn" data-filter="prevalence">Student Statistics</button>
+                        <button class="filter-btn" data-filter="barriers">Barriers & Cost</button>
+                        <button class="filter-btn" data-filter="science">CBT & App Efficacy</button>
+                        <button class="filter-btn" data-filter="market">Market Data</button>
+                    </div>
+
+                    <!-- Search Input -->
+                    <div class="sources-search-row">
+                        <input type="text" id="sources-search" placeholder="Search references by author, journal, or claim keyword...">
+                    </div>
+
+                    <!-- Sources Cards Grid -->
+                    <div class="sources-grid scrollbar-hidden" id="sources-cards-grid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global academic context footer -->
+        <footer class="global-footer">
+            <div class="footer-container">
+                <!-- Assignment & Authors Context Row -->
+                <div class="footer-context-row">
+                    <p class="context-academic">MindBridge is a prototype developed as Assignment 2 for the course <strong>Digital Design Tools and Documentation & Presentation</strong> at <strong>IIM Bangalore</strong>, under the guidance of Prof. Rajavel Manoharan and Prof. Neha Dubey.</p>
+                    <p class="context-group">Developed by <strong>Group 7</strong>: Neel Patel, Neel Vyas, Akshar Tank, Harsh Shikotra, Urvam Shah, Gaurav Pratap Singh & Soban Maza. &nbsp;|&nbsp; May 2026 &nbsp;|&nbsp; v4.7(4th Iteration Theme, 7th Development Build)</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- JS Core Script -->
+    <script src="app.js?v=13"></script>
+</body>
+</html>
